@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
     <script type="module" src="./main.js"></script>
   </body>
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-form js-search-form">
+        <input
+          class="search-input"
+          type="text"
+          name="searchtext"
+          placeholder="Search images..."
+        />
+        <button class="search-button" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="container">
+        <ul class="gallery js-gallery"></ul>
+        <button class="load-more-button js-load-more-button" type="button">Load more</button>
+      </div>
+      <span class="js-loader">Loading images, please wait...</span>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  
+    
 </html>

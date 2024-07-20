@@ -23,3 +23,162 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+body {
+  text-align: center;
+}
+
+h2, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 272px;
+  padding: 8px 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 30px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.search-input:hover {
+  border-color: #000000;
+}
+
+.search-input:active {
+  border-color: #4E75FF;
+}
+
+.search-button {
+  border: transparent;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #6C8CFF;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-image {
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 360 /200;
+}
+
+.gallery-item {
+  border: 1px solid #808080;
+}
+
+.discribe-box {
+  padding: 4px 25px 4px 20px;
+}
+
+.discribe-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discribe-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.discribe-text {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 150px auto;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-bottom: 4px solid #FF3D00;
+  border-left: 4px solid transparent;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.load-more-button {
+  border: transparent;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 125px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.is-hidden {
+  display: none;
+}
